@@ -422,7 +422,13 @@
                   </li>
                </ul>
             </div>
+            <form class="ft-form">
+               <h3 class="ft-form-header">подпишитесь на рассылку</h3>
+               <input type="email" name="email" id="email" placeholder="Email" />
+               <button type="submit">подписаться</button>
+            </form>
          </div>
+         
       </footer>
       <div class="backdrop is-hidden" data-modal>
          <div class="modal">
@@ -431,6 +437,19 @@
                 <use href="./images/icons.svg#icon-close-bt"></use>
              </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="md-form">
+               <label for="name">Имя</label>
+               <input type="text" class="bt-form-input" name="name"  id="name">
+               <label for="tel">Телефон</label>
+               <input type="tel" class="bt-form-input" name="tel" id="tel">
+               <label for="mail">Почта</label>
+               <input type="mail" class="bt-form-input" name="mail" id="mail">
+               <label for="comments">Комментарий</label>
+               <input type="text" class="bt-form-input-com" name="comments" id="comments">
+               <button type="submit">Отправить</button>
+               
+            </form>
          </div>
       </div>
       <script src="./js/modal.js"></script>

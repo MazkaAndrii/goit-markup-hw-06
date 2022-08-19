@@ -426,8 +426,12 @@
             </div>
             <form class="ft-form">
                <h3 class="ft-form-header">подпишитесь на рассылку</h3>
-               <input type="email" name="email" id="email" placeholder="Email" />
-               <button type="submit">подписаться</button>
+               <input type="email" class="ft-form-input" name="email" id="email" placeholder="Email" />
+               <button type="submit" class="ft-form-button">Подписаться
+                  <svg class="ft-form-bticon" width="24" height="24">
+                     <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+               </button>
             </form>
          </div>
       </footer>
@@ -461,16 +465,20 @@
                    <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
                </div>
-               <label for="comments" class="input-label">Комментарий</label>
-               <textarea class="md-form-input-com"
-                  name="comments"
-                  id="comments"
-                  placeholder="Введите текст"
-                  ></textarea>
+               <div class="form-field-area">
+                <label for="comments" class="input-label">Комментарий</label>
+                 <textarea class="md-form-input-com"
+                   name="comments"
+                   id="comments"
+                   placeholder="Введите текст"
+                 ></textarea>
+               </div>
                    
                   
                
-               <button type="submit" class="md-form-button">Отправить</button>
+               <button type="submit" class="md-form-button">Отправить
+                  
+               </button>
             </form>
          </div>
       </div>

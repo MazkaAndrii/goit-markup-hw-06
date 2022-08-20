@@ -483,13 +483,14 @@ h6 {
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    border-radius: 4px;
    background: #2f303a;
-}
+   color: rgba(255, 255, 255, 0.6);
+   }
 .ft-form input::placeholder {
    font-size: 16px;
    line-height: 1.25;
    letter-spacing: 0.03em;
    color: rgba(255, 255, 255, 0.6);
-}
+   }
 .ft-form-button {
    position: relative;
    padding: 10px 29px;
@@ -664,6 +665,10 @@ h6 {
    color: var(--basetext-color);
    margin-bottom: 4px;
 }
+.input-wrap {
+   position: relative;
+
+}
 .md-form-input {
    width: 100%;
    height: 40px;
@@ -673,32 +678,29 @@ h6 {
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.01em;
-   color: rgba(117, 117, 117, 0.5);
+   color: var(--text-color);
+   transition: var(--trans);
 }
 .form-field {
-   position: relative;
-   margin-bottom: 10px;
-}
-.form-field:hover {
-   fill: var(--header-color);
-   cursor: pointer;
-}
-.md-form-input:hover {
-   border: 1px solid var(--header-color);
-   border-radius: 4px;
-   cursor: pointer;
-}
-.md-form-input-com:hover {
-   border: 1px solid var(--header-color);
-   border-radius: 4px;
-   cursor: pointer;
+      margin-bottom: 10px;
 }
 
+.md-form-input:focus {
+   outline-color: var(--header-color)
+   }
+.md-form-input:focus + .icon-form {
+   fill: var(--header-color);
+}
+.md-form-input-com:focus {
+   outline-color: var(--header-color)
+}
 .icon-form {
    position: absolute;
-   top: 29px;
    left: 12px;
-}
+   top: 50%;
+   transform: translateY(-50%);
+   transition: var(--trans);
+   }
 .md-form-input-com {
    width: 100%;
    height: 96px;
@@ -708,8 +710,9 @@ h6 {
    font-size: 12px;
    line-height: 1.17;
    letter-spacing: 0.01em;
-   color: rgba(117, 117, 117, 0.5);
+   color: var(--text-color);
    resize: none;
+   transition: var(--trans);
 }
 .form-field-area {
    margin-bottom: 20px;
@@ -729,4 +732,25 @@ h6 {
    border-radius: 4px;
    border: 0;
    cursor: pointer;
+   transition: var(--trans);
+}
+.md-form-button:hover,
+.md-form-button:focus {
+ outline-color: var(--header-color)  
+}
+.ch-field {
+}
+.form-checkbox {
+}
+.ch-text {
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+.ch-field {
+}
+.form-checkbox {
+}
+.ch-text {
 }
